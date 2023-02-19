@@ -6,7 +6,7 @@ const ArticlesList = ({ articles }) => {
             {articles.map(articles => (
             <Link key={articles.name} className='article-list-item' to={`/articles/${articles.name}`}>
                 <h3>{articles.title}</h3>
-                <p>{articles.content[0].substring(0, 250)}...</p>
+                <p>{articles.content[0].substring(0, 200)}...</p>
             </Link>
         ))}
         </>
